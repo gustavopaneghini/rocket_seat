@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+}
+
+body {
+  min-width: 20rem;
+  height: auto;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3.2rem;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  max-width: 70rem;
+  background-color: #EFF1FF;
+
+}
+
+.page header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 3.2 rem;
+
+  background: #8E9AAF;
+}
+
+header img {
+  max-width: 13rem;
+  height: auto;
+}
+
+header .bgh1 {
+  width: 100%;
+  height: 5rem;
+  background: #CBC0D3;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header .bgh1 h1 {
+  font-family: 'Staatliches', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 3.4rem;
+  object-fit: cover;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+  margin: 0.9rem auto 0.6rem;
+}
+
+.page header .inside {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 1.5rem 3.2rem;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2rem auto 3.5rem;
+  padding: 0;
+  width: 20rem;
+}
+
+.txt p {
+
+  font-family: 'Palanquin', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+
+  color: #23053A;
+
+}
+
+.card {
+  position: relative;
+  padding: 0 5rem;
+  margin-top: 3rem;
+}
+
+
+/* Estilos de fonte */
+.card h2 span {
+  font-family: 'Staatliches', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+
+  text-transform: uppercase;
+  padding: 0.1rem 2.3rem;
+
+  color: #4A4E69
+}
+
+.card img:hover {
+  animation: texto 400ms forwards;
+  animation: opp 400ms forwards;
+  transition-duration: 200ms;
+  animation: texto 400ms forwards;
+}
+
+/* Backgroun e Posicionamento */
+.card h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  top: 1.6rem;
+  right: 6rem;
+  width: fit-content;
+  height: 3.5rem;
+  border-radius: 2rem;
+  background: #FEEAFA;
+}
+
+footer {
+  display: none;
+}
+
+
+@keyframes texto {
+  0% {
+    background: #FEEAFA;
+    color: #4A4E69;
+    opacity: 0;
+  }
+
+  100% {
+    background: #FEEAFA;
+    color: #4A4E69;
+    opacity: 1;
+  }
+}
+
+@keyframes opp {
+  0% {
+    scale: 1;
+    opacity: 1;
+    padding-bottom: 0rem;
+  }
+
+  100% {
+    scale: 1.1;
+    padding-bottom: 1rem;
+    opacity: 0.6;
+
+  }
+}
+
+@media (min-width: 700px) {
+
+  .txt,
+  .card h2,
+  .card h2 span {
+    display: none;
+  }
+
+  html,
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  img {
+    display: inline;
+    width: 100%;
+    height: auto;
+  }
+
+  .page {
+    display: grid;
+    grid-template-areas:
+      "h r r r"
+      "h r r r"
+      "h r r r";
+    max-width: 100%;
+    height: auto;
+    background-color: #fff;
+
+  }
+
+  .page header {
+    grid-area: h;
+    max-width: 35rem;
+    height: 100%;
+  }
+
+  .page .icecream {
+    grid-area: r;
+  }
+
+  .page header .inside {
+    display: block;
+    max-width: 38rem;
+  }
+
+  .page header img {
+    padding-top: 3rem;
+  }
+
+
+  .page header .inside p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0;
+    max-width: 20rem;
+  }
+
+  .icecream {
+    display: grid;
+    grid-template-areas:
+      "A B E"
+      "D B F"
+      "D C F"
+      "FO FO FO";
+    max-width: 80rrem;
+    gap: 3.2rem;
+    margin: 0 auto 0;
+    padding: 6.5rem 8rem 5rem;
+    height: auto;
+  }
+
+  .card {
+    margin: 0;
+    padding: 0;
+    max-width: 22rem;
+    max-height: 35rem;
+  }
+
+  .card img {
+    margin: 0;
+    padding: 0;
+    border-radius: 2rem;
+    max-width: 100%;
+    max-height: 35rem;
+  }
+
+  .card:nth-child(1) {
+    grid-area: A;
+  }
+
+  .card:nth-child(2) {
+    grid-area: B;
+  }
+
+  .card:nth-child(3) {
+    grid-area: C;
+  }
+
+  .card:nth-child(4) {
+    grid-area: D;
+  }
+
+  .card:nth-child(5) {
+    grid-area: E;
+  }
+
+  .card:nth-child(6) {
+    grid-area: F;
+  }
+
+
+  .footer {
+    grid-area: FO;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: center;
+    padding: 5rem 0rem;
+    margin: 0rem auto;
+
+    color: #4A4E69
+  }
+
+  .page header img {
+    animation: flutuante;
+    animation-iteration-count: infinite;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+  }
+
+  .card img:hover {
+    animation: cardsSize;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes flutuante {
+    0% {
+      transform: translateY(-1rem);
+    }
+
+    100% {
+      transform: translateY(+1rem);
+
+    }
+  }
+
+  @keyframes cardsSize {
+    0% {
+      scale: 1;
+      opacity: 1;
+    }
+
+    100% {
+      scale: 1.1;
+      filter: blur(1px);
+    }
+  }
+}
