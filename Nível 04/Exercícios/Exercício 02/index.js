@@ -24,7 +24,6 @@ Obs: você quem manda no tamanho da lista! No exemplo a lista é composta por 4 
 Fique à vontade caso queira adicionar novos dados e fazer novas validações. Se desafie! 🚀
 */
 
-
 const studentList = [
   {
     name: 'Gustavo',
@@ -53,13 +52,6 @@ let approve = 7;
 const media = (v1, v2) => {
   results = ((v1 + v2) / 2).toFixed(1)
   return Number(results)
-}
-
-
-const mensagem = (student) => {
-
-  alert(`A média do aluno(a) ${student.name} é: ${media(student.firstTest, student.secondTest)} \n`)
-
 }
 
 for (let student of studentList) {
