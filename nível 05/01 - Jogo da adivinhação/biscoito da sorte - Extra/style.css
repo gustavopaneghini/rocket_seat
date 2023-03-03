@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff--heading: 'Montserrat', sans-serif;
+  --tx--paragraf: 'DM Sans', sans-serif;
+
+}
+
+body {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+  text-align: center;
+
+}
+
+.hide {
+  display: none;
+}
+
+/* HOME */
+
+.content {
+  background: #FFFFFF;
+  box-shadow: 0px 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+
+  width: 42.8rem;
+  height: auto;
+  margin-left: -7rem;
+}
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.info h2 {
+  font-family: var(--ff--heading);
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  margin: 0 auto 1.4rem;
+  color: #34355B;
+
+}
+
+.info p {
+  font-family: var(--tx--paragraf);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin: 0 auto 2rem;
+
+
+  color: #34355B;
+}
+
+.info img {
+  width: 100%;
+  height: auto;
+}
+
+/* REACT */
+
+.open {
+  background: #FFFFFF;
+  box-shadow: 0px 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+
+  width: 42.8rem;
+  height: auto;
+  margin-left: -7rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4.8rem 6.4rem;
+}
+
+.info h2 {
+  font-family: "Montserrat";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+
+  color: #34355B;
+}
+
+.open .info .box-p {
+  background: #E4EDF1;
+  box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+  margin: 1.7rem auto 1.7rem;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.open .info p {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.info img {
+  width: 100%;
+  height: auto;
+  margin: 1.7rem auto 1.7rem;
+}
+
+button {
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  padding: 1.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #FF9500;
+  color: #FFFFFF;
+}
