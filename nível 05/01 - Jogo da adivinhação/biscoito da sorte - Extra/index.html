@@ -20,16 +20,16 @@
 <body>
 
   <main>
-    <div class="content hide">
+    <div class="content">
 
       <div class="info">
         <h2>Qual a sua sorte<br> de hoje ?</h2>
         <p>Abra o biscoito e descubra!</p>
-        <img src="./fortune-cookie.svg" alt="Biscoito da sorte">
+        <img id="close" src="./img/fortune-cookie.svg" alt="Biscoito da sorte">
       </div>
     </div>
 
-    <div class="open ">
+    <div class="content open hide">
 
       <div class="info">
 
@@ -37,13 +37,15 @@
         <div class="box-p">
           <p>Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.</p>
         </div>
-        <img src="./opened-cookie.svg" alt="Biscoito da sorte aberto">
-        <button>Abrir outro biscoito</button>
+        <img id="opened" src="./img/opened-cookie.svg" alt="Biscoito da sorte aberto">
+        <button id="luckyAgain">Abrir outro biscoito</button>
       </div>
 
     </div>
 
+    <script src="./main.js"></script>
   </main>
+
 </body>
 
 </html>
