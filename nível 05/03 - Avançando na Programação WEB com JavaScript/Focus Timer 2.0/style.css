@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    width: 100vw;
+    height: auto;
+
+}
+
+.page {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    text-align: center;
+
+}
+
+main {
+    /* min-width: 32.1rem; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5rem;
+}
+
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 19.2rem;
+
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.timer p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+    text-transform: uppercase;
+
+    color: #323238;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    gap: 4rem;
+    margin-top: 1.7rem;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-areas: 'A B' 'C D';
+
+    gap: 3.2rem;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 700ms;
+}
+
+.cards .padrao {
+    width: 13.8rem;
+    height: 15.2rem;
+
+
+    background: #E1E1E6;
+    border-radius: 2.4rem;
+}
+
+.cards .tree {
+    background: #00CD13;
+}
+
+.tree svg path {
+    fill: white;
+}
+
+.cards .cloud {
+    background: #2949ff;
+}
+
+.cloud svg path {
+    fill: white;
+}
+
+
+.cards .coffee {
+    background: #e48d1b;
+}
+
+.coffee  svg path {
+    fill: white;
+}
+
+.cards .fire {
+    background: #f11616;
+}
+
+.fire  svg path {
+    fill: white;
+}
+
