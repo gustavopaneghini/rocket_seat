@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100vh;
+}
+
+
+nav {
+  position: absolute;
+  top: 0;
+  padding: 4rem 5rem 4rem 7.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  gap: 3.2rem;
+
+}
+
+nav a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.1rem;
+  line-height: 2.2rem;
+
+  text-decoration: none;
+  color: #C4C4CC
+}
+
+nav a:focus {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/home.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6rem;
+
+  color: #E1E1E6;
+
+}
+
+button {
+  background-color: transparent;
+  padding: 1.2rem 3.2rem;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #FFFFFF;
+
+  border: 0.2rem solid #FFFFFF;
+  border-radius: 0.5rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2.4rem;
+
+  text-align: center;
+}
+
+#universe {
+  display: flex;
+  justify-content: flex-start;
+  padding: 18.5rem 5rem 5rem 10.2rem;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/universe.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contentText {
+
+  width: 64.8rem;
+  height: 20.3rem;
+
+  text-align: left;
+}
+
+p {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+
+  margin-top: 1.6rem;
+
+  color: #E1E1E6;
+}
+
+#exploration {
+  display: flex;
+  justify-content: flex-start;
+  padding: 18.5rem 0rem 0rem 10.2rem;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/exploration.svg);
+  background-size: cover;
+  background-position: center;
+}
