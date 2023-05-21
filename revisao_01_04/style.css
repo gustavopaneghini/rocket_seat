@@ -1,0 +1,320 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --tx-type: 'Mulish', sans-serif;
+
+  --cc--pink: rgba(181, 33, 132, 1);
+  --cc-dark_blue: rgba(49, 45, 100, 1);
+
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+body {
+  font-size: 1.6rem;
+  width: 43rem;
+  height: auto;
+  margin: 0 auto 0;
+  background-color: grey;
+}
+
+.page {
+  width: 100%;
+  height: auto;
+
+  background: #F9F4FB;
+
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 1.7rem;
+
+  padding: 0 3.4rem 9.3rem 3.2rem;
+}
+
+header .text_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: var(--tx-type);
+}
+
+header .text_content h1 {
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 4rem;
+
+  margin-bottom: .5rem;
+
+  color: var(--cc--pink);
+}
+
+header .text_content p {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+
+  margin-bottom: 3.5rem;
+
+  color: var(--cc-dark_blue);
+}
+
+header .text_content button {
+  background: none;
+  border: .4rem solid var(--cc--pink);
+  padding: 3rem 1.4rem;
+  border-radius: 76rem;
+
+  cursor: pointer;
+
+  animation: float 2s infinite both;
+  animation-timing-function: ease-in-out;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+
+  padding: 5.4rem 3.6rem 5.4rem;
+
+  text-align: left;
+}
+
+article .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.3rem;
+
+  padding: 2.6rem;
+
+  background-color: #FFFFFF;
+  box-shadow: 0rem 0.3rem 1.3rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.9rem;
+}
+
+article .card .content_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.9rem;
+
+  font-family: var(--tx-type);
+}
+
+article .card img {
+  max-width: 8.7rem;
+  max-height: 8.7rem;
+
+  animation: matrix3d 10s infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+article .card h1 {
+  font-weight: 900;
+  font-size: 2.9rem;
+  line-height: 3.7rem;
+
+  color: var(--cc--pink);
+}
+
+article .card p {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  color: var(--cc-dark_blue);
+}
+
+form {
+  padding: 7.8rem 4rem 6.5rem;
+
+  text-align: left;
+}
+
+form legend {
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 4rem;
+
+  margin-bottom: 4.3rem;
+
+  color: var(--cc--pink);
+}
+
+form fieldset {
+  font-family: var(--tx-type);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  border: none;
+
+  background-color: #F9F4FB;
+}
+
+form fieldset .input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
+
+  padding: 0 1.6rem 0 1.4rem;
+
+  border: 1.5px solid #312D64;
+  border-radius: 1.6rem;
+}
+
+form fieldset .input img {
+  display: inline;
+  max-width: 1.95rem;
+  max-height: 2.1rem;
+}
+
+form fieldset .input input {
+  width: 100%;
+  border: none;
+  padding: 1.2rem 0;
+
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+
+  text-align: left;
+
+  background-color: #F9F4FB;
+
+  color: var(--cc-dark_blue);
+
+}
+
+form fieldset textarea:focus,
+form fieldset .input input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+
+form fieldset textarea {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+
+  text-align: left;
+
+  color: var(--cc-dark_blue);
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1.2rem 1.6rem 1.6rem;
+  gap: 1rem;
+
+  border: 1.5px solid #312D64;
+  border-radius: 1.6rem;
+
+  background-color: #F9F4FB;
+}
+
+form fieldset button {
+  width: 50%;
+
+  border: none;
+
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+
+  padding: 1rem 1.6rem;
+
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+  border-radius: 1.6rem;
+
+  cursor: pointer;
+}
+
+form fieldset button:hover {
+  background: linear-gradient(96.21deg, #3f3bb4 0%, #302C63 99.68%);
+  transform: scale(1.03);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 3.2rem;
+  gap: 1rem;
+
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(-0.7rem);
+  }
+
+  50% {
+    transform: translateY(+7px);
+  }
+}
+
+@keyframes matrix3d {
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+}

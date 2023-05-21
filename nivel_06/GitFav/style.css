@@ -2,16 +2,19 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
   font-size: 62.5%;
-
 }
 
 body {
   font-size: 1.6rem;
-  background: #2F2F33;
+  padding: 5rem 16rem;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
 }
 
 .sr-only {
@@ -24,174 +27,204 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+  border: 1px solid white;
 }
 
-#app {
-  width: 100%;
-  height: auto;
-  padding: 11.5rem 16rem 11.6rem 16rem;
-}
-
-header {
+.img-person img {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  width: 100%;
-  height: 4.8rem;
-  gap: 29.3rem;
-}
 
-.logo {
-  width: 18.6rem;
-  height: 3.27rem;
-}
-
-header .search {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-
-  width: 64rem;
-  gap: 1rem;
-}
-
-header .search input {
-  width: 100%;
-  padding: 1.6rem;
-
-  border-radius: 0.5rem;
-  border: none;
-
-  font-family: "Roboto";
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.2rem;
-  letter-spacing: 0em;
+  margin-bottom: 6rem;
   text-align: left;
+}
 
+.header .input-search {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header .input-search input {
   background: #06181C;
+  border-radius: 0.5rem;
+  padding: 1.6rem;
+  width: 100%;
+
+  border: none;
+  color: #7C7C8A;
+}
+
+input::placeholder {
+  font-family: 'Roboto', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
 
   color: #7C7C8A;
 }
 
-header button {
-  font-family: "Roboto";
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 2.4rem;
+.header .input-search button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
 
-  background: #065E7C;
+  padding: 1.2rem 3rem;
 
   border: none;
   border-radius: 0.5rem;
+
+  background: #065E7C;
+
+  cursor: pointer;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
 
   text-transform: uppercase;
 
   color: #FFFFFF;
 }
 
-header button .text-btn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0.8rem;
-  padding: 1.2rem 3.2rem;
-}
-
-.text-btn img {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-
 table {
+  display: grid;
+
   width: 100%;
+
+
   border-spacing: 0;
-  margin-top: 8.7rem;
-  border: 2px solid #4A808C;
+  /* border: 1px solid white; */
+
   border-radius: 1.2rem;
+  border: 1px solid #4A808C
+}
+
+thead {
+  display: block;
+  text-align: left;
+  color: white;
+}
+
+thead tr {
+  display: grid;
+  grid-template-areas: "A B C D";
+  grid-template-columns: 45% 25% 20% 20%;
+
+  border-radius: 1.2rem 1.2rem 0 0;
+  background: #092D38;
+  padding: 1.6rem 2.4rem 1.6rem 2.4rem;
+  text-align: left;
 }
 
 thead tr th {
-  padding: 1.6rem 2.4rem 1.6rem 4rem;
-
-  background: #092D38;
-
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 2rem;
   line-height: 3.2rem;
 
+  color: #E1E1E6;
+}
+
+tbody {
+  display: block;
   text-align: left;
+  overflow: hidden auto;
+  height: 34rem;
+}
+
+tbody tr {
+  display: grid;
+  grid-template-areas: "A B C D";
+  grid-template-columns: 45% 25% 20% 20%;
+
+  padding: 2.4rem 4rem;
+}
+
+tbody tr td {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.2rem;
 
   color: #E1E1E6;
 }
 
-thead tr th:first-child {
-  border-radius: 1.2rem 0 0 0;
-  width: 45%;
-}
-
-thead tr th:last-child {
-  border-radius: 0 1.2rem 0 0;
-  text-align: left;
-}
-
-tbody tr .usuario {
-  background: rgba(6, 22, 27, 0.5);
-  padding: 2.4rem 4rem;
+tbody tr .user {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 1.6rem;
 }
 
-a {
-  text-decoration: none;
-  color: #E1E1E6;
+tbody::-webkit-scrollbar {
+
+
+
+  right: 500px;
+  width: 6px;
+  margin: 50px;
+
+}
+
+tbody::-webkit-scrollbar-button {
+  display: none
+}
+
+tbody::-webkit-scrollbar-thumb {
+  height: 12.2rem;
+  background: #4A808C;
+  border-radius: 1rem;
+
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.username-link {
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.username-link a {
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.2rem;
+
+  text-decoration: none;
+
+  color: #E1E1E6;
 }
 
-tbody tr {
-  background: rgba(6, 22, 27, 0.5);
-}
+.remove button {
+  background: none;
 
-tbody tr td {
-  padding: 2.4rem 4rem;
-
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 2rem;
   line-height: 3.2rem;
 
-  color: #E1E1E6;
-}
-
-tbody tr td img {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-}
-
-tbody tr td button {
-  background: none;
   border: none;
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 3.2rem;
-
-
   color: #F75A68;
-}
 
-tr:nth-child(even) {
-  background: rgba(6, 22, 27, 0.5);
-}
-
-tr:nth-child(odd) {
-  background: #06181C;
+  cursor: pointer;
 }
