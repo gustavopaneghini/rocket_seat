@@ -34,8 +34,6 @@ img {
 
 body {
   font-size: 1.6rem;
-  width: 43rem;
-  height: auto;
   margin: 0 auto 0;
   background-color: grey;
 }
@@ -109,6 +107,8 @@ article {
   padding: 5.4rem 3.6rem 5.4rem;
 
   text-align: left;
+
+
 }
 
 article .card {
@@ -118,6 +118,7 @@ article .card {
   gap: 3.3rem;
 
   padding: 2.6rem;
+
 
   background-color: #FFFFFF;
   box-shadow: 0rem 0.3rem 1.3rem rgba(0, 0, 0, 0.25);
@@ -137,8 +138,8 @@ article .card img {
   max-width: 8.7rem;
   max-height: 8.7rem;
 
-  animation: matrix3d 10s infinite;
-  animation-timing-function: ease-in-out;
+  animation: planet_rotation 20s infinite;
+  animation-timing-function: linear;
 
 }
 
@@ -176,6 +177,7 @@ form legend {
 
 form fieldset {
   font-family: var(--tx-type);
+
 
   display: flex;
   flex-direction: column;
@@ -228,7 +230,6 @@ form fieldset .input input:focus {
   outline: 0;
 }
 
-
 form fieldset textarea {
   font-family: 'Mulish', sans-serif;
   font-size: 1.6rem;
@@ -278,6 +279,7 @@ form fieldset button:hover {
   transform: scale(1.03);
 }
 
+
 footer {
   display: flex;
   flex-direction: column;
@@ -299,6 +301,184 @@ footer {
 
 }
 
+@media (min-width:43rem) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 2.9rem 10.3rem 10.9rem;
+
+  }
+
+  header img {
+    width: 50%;
+    height: auto;
+  }
+
+  header .text_content {
+    margin: auto 0 auto;
+    align-items: start;
+  }
+
+  header .text_content h1 {
+
+    font-size: 5.8rem;
+    line-height: 7.3rem;
+
+    margin-bottom: .8rem;
+
+    color: var(--cc--pink);
+  }
+
+  header .text_content p {
+
+    font-size: 3.2rem;
+    line-height: 4.0rem;
+
+    margin-bottom: 0;
+
+    color: var(--cc-dark_blue);
+  }
+
+  header .text_content button {
+    margin-top: 17rem;
+
+    cursor: pointer;
+
+    animation: float 2s infinite both;
+    animation-timing-function: ease-in-out;
+  }
+
+  header .text_content button img {
+    width: 100%;
+
+  }
+
+
+  article {
+
+    flex-direction: row;
+
+    gap: 6rem;
+
+    padding: 6.4rem 11.1rem;
+  }
+
+  article .card {
+    gap: 4rem;
+
+    padding: 3.2rem 1.3rem 7.2rem 3.2rem;
+  }
+
+  article .card .content_card {
+    gap: 2.4rem;
+  }
+
+  article .card img {
+    max-width: 9.7rem;
+    max-height: 9.7rem;
+  }
+
+
+  form {
+    background-image: url(./images/desktop_images/input_decoration.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+
+    padding: 9.5rem 000rem 9.5rem 10rem;
+
+
+    text-align: left;
+  }
+
+
+  form legend {
+    font-family: var(--tx-type);
+    font-size: 4.2rem;
+    line-height: 5.3rem;
+
+    margin-bottom: 3rem;
+
+    color: var(--cc--pink);
+  }
+
+  form fieldset {
+    font-family: var(--tx-type);
+
+    max-width: 55rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    border: none;
+
+    background-color: #F9F4FB;
+  }
+
+
+  form fieldset .input {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+
+    padding: 0 1.6rem 0 1.4rem;
+
+    border: 1.5px solid #312D64;
+    border-radius: 1.6rem;
+  }
+
+  form fieldset .input img {
+    display: inline;
+    max-width: 1.95rem;
+    max-height: 2.1rem;
+  }
+
+  form fieldset .input input {
+
+    padding: 1.6rem 0;
+  }
+
+  form fieldset textarea:focus,
+  form fieldset .input input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }
+
+  form fieldset textarea {
+    width: auto;
+    max-height: 13rem;
+
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+
+    text-align: left;
+
+    color: var(--cc-dark_blue);
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1.2rem 1.6rem 1.6rem;
+    gap: 1rem;
+
+    border: 1.5px solid #312D64;
+    border-radius: 1.6rem;
+
+    background-color: #F9F4FB;
+  }
+
+  form fieldset button {
+    max-width: 15.1rem;
+  }
+}
+
 @keyframes float {
 
   0%,
@@ -311,7 +491,7 @@ footer {
   }
 }
 
-@keyframes matrix3d {
+@keyframes planet_rotation {
 
   100% {
     transform: rotate(360deg);
